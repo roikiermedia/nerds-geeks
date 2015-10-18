@@ -18,7 +18,20 @@
       max-height: 95vh;
       position: absolute;
       z-index: 10;
+      margin-top: -1.5rem;
       justify-content: center;
+    }
+
+    .presentedcontainer {
+      position: absolute;
+      left: 50%;
+      margin-top: 2.5rem;
+    }
+    .presented {
+      width: 12rem;
+      z-index: 11;
+      position: relative;
+      left: -6rem;
     }
 
     .container {
@@ -35,6 +48,9 @@
   <body>
     <div class="container">
       <div id="particles-js" class="particle"></div>
+      <div class="presentedcontainer">
+        <img src="img/presentedby.svg" alt="Die Slamigans präsentieren:" class="presented">
+      </div>
       <img src="img/logonocan.svg" alt="Nerds & Geeks Logo" class="logo">
     </div>
 
