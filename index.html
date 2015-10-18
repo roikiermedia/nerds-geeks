@@ -9,6 +9,22 @@
     .particle {
       width: 99vw;
       height: 97vh;
+      position: absolute;
+      z-index: -10;
+      justify-content: center;
+    }
+
+    .logo {
+      max-height: 95vh;
+      position: absolute;
+      z-index: 10;
+      justify-content: center;
+    }
+
+    .container {
+      max-width: 100%;
+      max-height: 100%;
+      position: relative;
     }
     </style>
     <link rel="stylesheet" href="css/main.css">
@@ -17,8 +33,9 @@
     <title>Nerds & Geeks</title>
   </head>
   <body>
-    <div style="display:flex;justify-content:center;align-items:center;">
+    <div class="container">
       <div id="particles-js" class="particle"></div>
+      <img src="img/logonocan.svg" alt="Nerds & Geeks Logo" class="logo">
     </div>
 
     <script src="js/particles.min.js"></script>
